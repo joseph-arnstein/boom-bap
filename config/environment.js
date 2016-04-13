@@ -14,10 +14,19 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-    }
-  };
+          // Here you can pass flags/options to your application instance
+          // when it is created
+        },
+        contentSecurityPolicy: {
+          'default-src': "'none'",
+          'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
+          'font-src': "'self'",
+          'connect-src': "'self' wss://*.firebaseio.com",
+          'img-src': "'self' *",
+          'style-src': "'self' 'unsafe-inline'",
+          'frame-src': "'self' https://*.firebaseio.com"
+        }
+      };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

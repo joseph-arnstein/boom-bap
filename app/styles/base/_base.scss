@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #252525;
+  font-family: 'Helvetica';
+  h2 {
+    text-align: center;
+    font-size: 6em;
+    color: #e0e0e0;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 2em;
+    font-weight: lighter;
+  }
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+
+a {
+  text-decoration: none;
+  h2 {
+    color: white;
+    &:hover {
+    color: LightGreen;
+    }
+  }
+}
