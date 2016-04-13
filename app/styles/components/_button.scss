@@ -12,6 +12,7 @@ button {
   font-weight: 300;
   color: #666;
   letter-spacing: 0.1em;
+  box-shadow: 4px 4px 1px #666;
 }
 
 .meow {
@@ -22,4 +23,8 @@ button {
 }
 .snare {
   background: LightSalmon;
+}
+
+.button-wrapper {
+
 }

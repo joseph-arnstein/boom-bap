@@ -26,10 +26,15 @@ body {
   }
 }
 .wrapper {
+  background: LightGrey;
+  border-radius: 5px;
+  height: 500px;
+  width: 75%;
   display: flex;
   justify-content: center;
-  width: 90%;
+  align-items: center;
   margin: auto;
+  margin-top: 75px;
 }
 
 
