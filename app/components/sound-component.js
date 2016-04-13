@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   actions: {
     makeSound(){
       var sound = new Audio('http://sounds.ucode.com/assets/meow.wav');
-      setInterval(function(){ sound.play(); }, 3000);
+      sound.play();
     },
 
     kickDrum() {
@@ -13,7 +13,7 @@ export default Ember.Component.extend({
     },
 
     snareDrum() {
-      var snare = new Audio('/dumbsounds.mp3');
+      var snare = new Audio('http://freewavesamples.com/files/Kawai-K1r-Snare.wav');
       snare.play();
     }
   }
