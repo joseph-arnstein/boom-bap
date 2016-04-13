@@ -8,4 +8,23 @@ button {
   border-radius: 10px;
   border: none;
   margin: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #666;
+  letter-spacing: 0.1em;
+  box-shadow: 4px 4px 1px #666;
+}
+
+.meow {
+  background: LightGreen;
+}
+.kick {
+  background: LightBlue;
+}
+.snare {
+  background: LightSalmon;
+}
+
+.button-wrapper {
+
 }
