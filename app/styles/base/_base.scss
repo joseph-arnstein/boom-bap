@@ -96,10 +96,31 @@ body {
   height: 15px;
   width: 15px;
   border-radius: 7.5px;
-  background: orange;
   border: 1px solid darken(orange, 10);
   margin-right: 20px;
   margin-left: 60px;
+/*animation*/
+-webkit-animation:blink 1s infinite alternate;
+   -moz-animation:blink 1s infinite alternate;
+    -ms-animation:blink 1s infinite alternate;
+     -o-animation:blink 1s infinite alternate;
+        animation:blink 1s infinite alternate;
+// position:absolute;
+z-index:100;
+/*border-radius*/
+-webkit-border-radius:40px;
+   -moz-border-radius:40px;
+        border-radius:40px;
+background-color:orange;
+}
+@keyframes blink{
+from {background:orange;}
+to {background: darken(orange, 15);}
+}
+@-webkit-keyframes blink /* Safari and Chrome */
+{
+from {background: orange;}
+to {background: darken(orange, 15);}
 }
 
 a {
