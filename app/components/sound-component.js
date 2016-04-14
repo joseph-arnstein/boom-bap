@@ -53,9 +53,5 @@ export default Ember.Component.extend({
       var openHat = new Audio('new-samples/Brw_H.wav');
       openHat.play();
     },
-
-    startCount(){
-      this.get('timeCount').startCountUp();
-    }
   }
 });
