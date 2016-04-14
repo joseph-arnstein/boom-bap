@@ -85,6 +85,21 @@ body {
   }
 }
 
+.middle-top {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.power-light {
+  height: 15px;
+  width: 15px;
+  border-radius: 7.5px;
+  background: orange;
+  border: 1px solid darken(orange, 10);
+  margin-right: 20px;
+}
+
 a {
   text-decoration: none;
   h2 {
