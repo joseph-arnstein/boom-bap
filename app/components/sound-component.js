@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  timeCount: Ember.inject.service(),
+
   actions: {
     clapDrum(){
       var clap = new Audio('new-samples/02_03_claps.wav');
@@ -50,6 +52,10 @@ export default Ember.Component.extend({
     openHatDrum(){
       var openHat = new Audio('new-samples/Brw_H.wav');
       openHat.play();
+    },
+
+    startCount(){
+      this.get('timeCount').startCountUp();
     }
   }
 });
