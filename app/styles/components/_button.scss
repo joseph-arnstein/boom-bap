@@ -10,48 +10,64 @@ button {
   margin: 15px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #666;
+  color: AliceBlue;
   letter-spacing: 0.1em;
   box-shadow: 1px 1px 3px #999;
 }
 
 .button-wrapper {
   width: 50vw;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 .kickDrum, .clapDrum {
-  background: LightGreen;
+  color: LightGreen;;
+  background: AliceBlue;
+  border: 1px solid LightGreen;
   &:hover {
-    background: AliceBlue;
-    border: 1px solid LightGreen;
+    background: LightGreen;
+    color: AliceBlue;
   }
 }
 .synthKickDrum, .clap2Drum {
-  background: LightSkyBlue;
+  color: LightSkyBlue;
+  background: AliceBlue;
+  border: 1px solid LightSkyBlue;
   &:hover {
-    background: AliceBlue;
-    border: 1px solid LightSkyBlue;
+    color: AliceBlue;
+    background: LightSkyBlue;
   }
 }
 .snareDrum, .crashDrum {
-  background: LightSalmon;
+  color: LightSalmon;
+  background: AliceBlue;
+  border: 1px solid LightSalmon;
   &:hover {
-    background: AliceBlue;
-    border: 1px solid LightSalmon;
+    color: AliceBlue;
+    background: LightSalmon;
   }
 }
 .snare2Drum, .openHatDrum {
-  background: #67e4de;
+  color: #67e4de;
+  background: AliceBlue;
+  border: 1px solid #67e4de;
   &:hover {
-    background: AliceBlue;
-    border: 1px solid #67e4de;
+    color: AliceBlue;
+    background: #67e4de;
   }
 }
 .rimShotDrum, .closedHatDrum {
-  background: LightGoldenRodYellow;
+  color: #eded5e;
+  background: AliceBlue;
+  border: 1px solid #eded5e;
   &:hover {
-    background: AliceBlue;
-    border: 1px solid LightGoldenRodYellow;
+    color: AliceBlue;
+    background: #eded5e;
   }
+}
+
+//icons
+
+.fa-sign-language, .fa-keyboard-o, .fa-clone, .fa-circle, .fa-circle-o, .fa-bullseye, .fa-database, .fa-bolt, .fa-magic {
+  font-size: 2em;
 }
