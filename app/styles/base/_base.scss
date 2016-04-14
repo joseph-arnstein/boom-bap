@@ -19,13 +19,13 @@ body {
 .wrapper {
   background: AliceBlue;
   border-radius: 10px;
-  height: 500px;
+  height: 475px;
   width: 75%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 45px;
   -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
   -moz-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
   box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
@@ -34,9 +34,47 @@ body {
 a {
   text-decoration: none;
   h2 {
-    color: white;
-    &:hover {
-    color: LightGreen;
+    .b-title {
+      color: LightGreen;
+      &:hover {
+      color: white;
+      }
+    }
+    .o-title {
+      color: LightSkyBlue;
+      &:hover {
+      color: white;
+      }
+    }
+    .o2-title {
+      color: LightSalmon;
+      &:hover {
+      color: white;
+      }
+    }
+    .m-title {
+      color: #67e4de;
+      &:hover {
+      color: white;
+      }
+    }
+    .b2-title {
+      color: #eded5e;
+      &:hover {
+      color: white;
+      }
+    }
+    .a-title {
+      color: LightGreen;
+      &:hover {
+      color: white;
+      }
+    }
+    .p-title {
+      color: LightSkyBlue;
+      &:hover {
+      color: white;
+      }
     }
   }
 }
