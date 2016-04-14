@@ -12,21 +12,12 @@ html {
 
 body {
   background: #252525;
-  // background: linear-gradient(180deg, #ff644d, #e63df5, #3dd0f5, #4dff82);
-  // background-size: 600% 600%;
-  // animation: backgAnimation 3s ease infinite;
   font-family: 'Helvetica';
-  h2 {
-    text-align: center;
-    font-size: 6em;
-    color: #e0e0e0;
-    font-family: 'Comfortaa', cursive;
-    letter-spacing: 2em;
-    font-weight: lighter;
-  }
+  overflow-x: hidden;
 }
+
 .wrapper {
-  background: LightGrey;
+  background: AliceBlue;
   border-radius: 10px;
   height: 500px;
   width: 75%;
@@ -35,6 +26,9 @@ body {
   align-items: center;
   margin: auto;
   margin-top: 75px;
+  -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  -moz-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
 }
 
 a {

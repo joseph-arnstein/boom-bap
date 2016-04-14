@@ -3,28 +3,55 @@
 // -----------------------------------------------------------------------------
 
 button {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 10px;
   border: none;
-  margin: 5px;
+  margin: 15px;
   text-transform: uppercase;
   font-weight: 300;
   color: #666;
   letter-spacing: 0.1em;
-  box-shadow: 4px 4px 1px #666;
+  box-shadow: 1px 1px 3px #999;
 }
 
 .button-wrapper {
-  width: 40vw;
+  width: 50vw;
+  margin-top: 150px;
 }
 
-.kickDrum{
+.kickDrum, .clapDrum {
   background: LightGreen;
+  &:hover {
+    background: AliceBlue;
+    border: 1px solid LightGreen;
+  }
 }
-.synthKickDrum {
-  background: LightBlue;
+.synthKickDrum, .clap2Drum {
+  background: LightSkyBlue;
+  &:hover {
+    background: AliceBlue;
+    border: 1px solid LightSkyBlue;
+  }
 }
-.snareDrum {
+.snareDrum, .crashDrum {
   background: LightSalmon;
+  &:hover {
+    background: AliceBlue;
+    border: 1px solid LightSalmon;
+  }
+}
+.snare2Drum, .openHatDrum {
+  background: #67e4de;
+  &:hover {
+    background: AliceBlue;
+    border: 1px solid #67e4de;
+  }
+}
+.rimShotDrum, .closedHatDrum {
+  background: LightGoldenRodYellow;
+  &:hover {
+    background: AliceBlue;
+    border: 1px solid LightGoldenRodYellow;
+  }
 }
