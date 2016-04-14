@@ -20,7 +20,7 @@ body {
   background: AliceBlue;
   border-radius: 10px;
   height: 500px;
-  width: 60%;
+  width: 58%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,8 +42,8 @@ body {
 .knob {
   height: 100px;
   width: 100px;
+  background: AliceBlue;
   border-radius: 50px;
-  // border: 1px solid #999;
   box-shadow: 1px 1px 1px #999;
   border: solid 1px LightGrey;
   border-top-color: RoyalBlue;
@@ -53,12 +53,35 @@ body {
 }
 }
 
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(290px, 0);
+  }
+
+  80% {
+    transform: translate(0px, 0);
+  }
+}
+
 .led-display {
   height: 60px;
   width: 350px;
   border-radius: 5px;
   background: #bdf5bd;
   border: 1px solid LightGreen;
+  .fa-eraser {
+    color: #666;
+    font-size: 1.5em;
+    opacity: 0.7;
+    margin-top: 15px;
+    margin-left: 10px;
+    animation:
+    nudge 8s linear infinite alternate;
+  }
 }
 
 a {
