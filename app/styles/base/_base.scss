@@ -20,7 +20,8 @@ body {
   background: AliceBlue;
   border-radius: 10px;
   height: 500px;
-  width: 58%;
+  min-width: 58%;
+  max-width: 58%;
   display: flex;
   justify-content: center;
   align-items: center;
