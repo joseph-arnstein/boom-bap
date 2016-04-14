@@ -1,3 +1,13 @@
 /**
  * Basic typography style for copy text
  */
+
+ h2 {
+   font-size: 6em;
+   font-family: 'Comfortaa', cursive;
+   letter-spacing: 2em;
+   text-shadow: 20px 20px #111;
+   font-weight: lighter;
+   text-align: center;
+  //  line-height: 1.1em;
+ }

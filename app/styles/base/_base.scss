@@ -12,38 +12,122 @@ html {
 
 body {
   background: #252525;
-  // background: linear-gradient(180deg, #ff644d, #e63df5, #3dd0f5, #4dff82);
-  // background-size: 600% 600%;
-  // animation: backgAnimation 3s ease infinite;
   font-family: 'Helvetica';
-  h2 {
-    text-align: center;
-    font-size: 6em;
-    color: #e0e0e0;
-    font-family: 'Comfortaa', cursive;
-    letter-spacing: 2em;
-    font-weight: lighter;
-  }
+  overflow-x: hidden;
 }
+
 .wrapper {
-  background: LightGrey;
+  background: AliceBlue;
   border-radius: 10px;
   height: 500px;
-  width: 75%;
+  width: 58%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 75px;
+  margin-top: 50px;
+  -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  -moz-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
 }
 
+.drum-top {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.knob {
+  height: 100px;
+  width: 100px;
+  background: AliceBlue;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px #999;
+  border: solid 1px LightGrey;
+  border-top-color: RoyalBlue;
+  transition-duration: 10s;
+  &:hover {
+  transform: rotate(720deg);
+}
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(290px, 0);
+  }
+
+  80% {
+    transform: translate(0px, 0);
+  }
+}
+
+.led-display {
+  height: 60px;
+  width: 350px;
+  border-radius: 5px;
+  background: #bdf5bd;
+  border: 1px solid LightGreen;
+  .fa-eraser {
+    color: #666;
+    font-size: 1.5em;
+    opacity: 0.4;
+    margin-top: 15px;
+    margin-left: 10px;
+    animation:
+    nudge 12s linear infinite alternate;
+  }
+}
 
 a {
   text-decoration: none;
   h2 {
-    color: white;
-    &:hover {
-    color: LightGreen;
+    .b-title {
+      color: LightGreen;
+      &:hover {
+      color: white;
+      }
+    }
+    .o-title {
+      color: LightSkyBlue;
+      &:hover {
+      color: white;
+      }
+    }
+    .o2-title {
+      color: LightSalmon;
+      &:hover {
+      color: white;
+      }
+    }
+    .m-title {
+      color: #67e4de;
+      &:hover {
+      color: white;
+      }
+    }
+    .b2-title {
+      color: #eded5e;
+      &:hover {
+      color: white;
+      }
+    }
+    .a-title {
+      color: LightGreen;
+      &:hover {
+      color: white;
+      }
+    }
+    .p-title {
+      color: LightSkyBlue;
+      &:hover {
+      color: white;
+      }
     }
   }
 }

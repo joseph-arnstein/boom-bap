@@ -8,7 +8,7 @@ April 15, 2016
 
 ### Description
 
-Boom Bap is a primitive drum machine a user can click drum pads and hear sound!
+Boom Bap is a primitive drum machine where a user can hover over the drum pads to create a beat!
 
 ## Installation
 
