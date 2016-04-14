@@ -2,7 +2,8 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-button {
+
+.drum {
   width: 120px;
   height: 120px;
   border-radius: 10px;
@@ -73,6 +74,53 @@ button {
   }
 }
 
+.loop-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loop {
+  width: 100px;
+  height: 40px;
+  border: none;
+  margin: 1.5px 1.5px;
+  background: #888;
+}
+
+.start-loop {
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  margin-left: -120px;
+  color: AliceBlue;
+  background: LightSalmon;
+  // border: 1px solid #fff;
+  border: none;
+  border-radius: 10px;
+  &:hover {
+    color: LightSalmon;
+    background: AliceBlue;
+  }
+}
+
+.kick-one {
+  border-top-left-radius: 10px;
+}
+
+.snare-one {
+  border-bottom-left-radius: 10px;
+}
+
+.kick-eight {
+  border-top-right-radius: 10px;
+}
+
+.snare-eight {
+  border-bottom-right-radius: 10px;
+}
 //icons
 
 .fa-sign-language, .fa-keyboard-o, .fa-clone, .fa-circle, .fa-circle-o, .fa-bullseye, .fa-database, .fa-bolt, .fa-magic {
