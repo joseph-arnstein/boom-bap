@@ -19,16 +19,46 @@ body {
 .wrapper {
   background: AliceBlue;
   border-radius: 10px;
-  height: 475px;
-  width: 75%;
+  height: 500px;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  margin-top: 45px;
+  margin-top: 50px;
   -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
   -moz-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
   box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+}
+
+.drum-top {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.knob {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  // border: 1px solid #999;
+  box-shadow: 1px 1px 1px #999;
+  border: solid 1px LightGrey;
+  border-top-color: RoyalBlue;
+  transition-duration: 10s;
+  &:hover {
+  transform: rotate(720deg);
+}
+}
+
+.led-display {
+  height: 60px;
+  width: 350px;
+  border-radius: 5px;
+  background: #bdf5bd;
+  border: 1px solid LightGreen;
 }
 
 a {
