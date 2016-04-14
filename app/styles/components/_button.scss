@@ -16,8 +16,15 @@ button {
 }
 
 .button-wrapper {
-  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
   margin-top: 40px;
+  width: 50%;
+  height: 400px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .kickDrum, .clapDrum {
