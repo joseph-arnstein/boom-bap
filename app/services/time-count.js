@@ -4,16 +4,13 @@ export default Ember.Service.extend({
   currentCount: 0,
   soundBank: [],
 
-  add(sound){
+  add(sound) {
     this.get('soundBank').pushObject(sound);
   },
 
-
-  startCountUp(){
-
+  startCountUp() {
     var that = this;
-
-    setInterval(function(){
+    setInterval(function() {
       var count = that.get('currentCount');
       if (count === 8) {
         count = 0;
@@ -25,18 +22,11 @@ export default Ember.Service.extend({
       console.log(that.get('currentCount'));
       var soundBank = that.get('soundBank');
 
-      for(var i=0; i < soundBank.get('length'); i++) {
-        //console.log(soundBank.objectAt(i).position);
+      for (var i = 0; i < soundBank.get('length'); i++) {
         if (that.get('currentCount') === soundBank.objectAt(i).position) {
-          console.log("BANG!");
           soundBank.objectAt(i).sound.play();
         }
-       }
-
+      }
     }, 400);
-
-
-
   }
-
 });
