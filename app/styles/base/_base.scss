@@ -2,56 +2,16 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-html {
-  box-sizing: border-box;
+// animations
+
+@keyframes blink{
+  from {background:lighten($led-orange, 10);}
+  to {background: darken($led-orange, 10);}
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-body {
-  background: $boom-dark-grey;
-  font-family: $stack-helvetica;
-  overflow-x: hidden;
-}
-
-.wrapper {
-  background: $boom-grey;
-  border-radius: 10px;
-  height: 475px;
-  min-width: 800px;
-  max-width: 800px;
-  margin: auto;
-  margin-top: 10px;
-  -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
-  -moz-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
-  box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
-}
-
-.sound-component {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.drum-top {
-  margin-top: 25px;
-  display: flex;
-}
-
-.knob {
-  height: 100px;
-  width: 100px;
-  background: $boom-grey;
-  border-radius: 50px;
-  box-shadow: 1px 1px 1px $shadow-grey;
-  border: solid 1px LightGrey;
-  border-top-color: RoyalBlue;
-  transition-duration: 10s;
-  &:hover {
-  transform: rotate(720deg);
-}
+@-webkit-keyframes blink {
+  from {background: lighten($led-orange, 10);}
+  to {background: darken($led-orange, 15);}
 }
 
 @keyframes nudge {
@@ -68,57 +28,96 @@ body {
   }
 }
 
-.led-display {
-  margin-right: 60px;
-  height: 60px;
-  width: 350px;
-  border-radius: 5px;
-  background: #bdf5bd;
-  border: 1px solid $boom-green;
-  .fa-eraser {
-    color: #666;
-    font-size: 1.5em;
-    opacity: 0.4;
-    margin-top: 15px;
-    margin-left: 10px;
-    animation:
-    nudge 12s linear infinite alternate;
+//basic styles
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $boom-dark-grey;
+  font-family: $stack-helvetica;
+  overflow-x: hidden;
+}
+
+// drum machine
+
+.wrapper {
+  background: $boom-grey;
+  border-radius: 10px;
+  height: 475px;
+  min-width: 800px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  -moz-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
+  .sound-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .drum-top {
+      display: flex;
+      margin-top: 25px;
+    }
+    .knob {
+      background: $boom-grey;
+      border-radius: 50px;
+      box-shadow: 1px 1px 1px $shadow-grey;
+      border: solid 1px LightGrey;
+      border-top-color: RoyalBlue;
+      height: 100px;
+      width: 100px;
+      transition-duration: 10s;
+      &:hover {
+      transform: rotate(720deg);
+      }
+    }
+    .led-display {
+      background: #bdf5bd;
+      border: 1px solid $boom-green;
+      border-radius: 5px;
+      height: 60px;
+      width: 350px;
+      margin-right: 60px;
+      .fa-eraser {
+        color: #666;
+        font-size: 1.5em;
+        opacity: 0.4;
+        margin-top: 15px;
+        margin-left: 10px;
+        animation:
+        nudge 12s linear infinite alternate;
+      }
+    }
+    .middle-top {
+      display: flex;
+      align-items: center;
+      align-content: space-between;
+    }
+    .power-light {
+      background: lighten($led-orange, 10);
+      border: 1px solid darken($led-orange, 10);
+      border-radius: 6px;
+      height: 12px;
+      width: 12px;
+      margin-left: 60px;
+      margin-right: 20px;
+      -webkit-animation:blink 1s infinite alternate;
+      -moz-animation:blink 1s infinite alternate;
+      -ms-animation:blink 1s infinite alternate;
+      -o-animation:blink 1s infinite alternate;
+      animation:blink 1s infinite alternate;
+    }
   }
 }
 
-.middle-top {
-  display: flex;
-  align-items: center;
-  align-content: space-between;
-}
-
-.power-light {
-  height: 12px;
-  width: 12px;
-  border-radius: 6px;
-  background-color: lighten($led-orange, 10);
-  border: 1px solid darken($led-orange, 10);
-  margin-right: 20px;
-  margin-left: 60px;
-  -webkit-animation:blink 1s infinite alternate;
-  -moz-animation:blink 1s infinite alternate;
-  -ms-animation:blink 1s infinite alternate;
-  -o-animation:blink 1s infinite alternate;
-  animation:blink 1s infinite alternate;
-  -webkit-border-radius:40px;
-  -moz-border-radius:40px;
-  border-radius:40px;
-}
-
-@keyframes blink{
-  from {background:lighten($led-orange, 10);}
-  to {background: darken($led-orange, 10);}
-}
-
-@-webkit-keyframes blink {
-  from {background: lighten($led-orange, 10);}
-  to {background: darken($led-orange, 15);}
-}
+// link styles
 
 a {
   text-decoration: none;
