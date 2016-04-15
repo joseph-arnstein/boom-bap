@@ -12,7 +12,7 @@ Boom Bap is a primitive drum machine where a user can hover over the drum pads t
 
 ## Installation
 
-* `git clone https://github.com/patternandshape/boom-bap.git`
+* `https://github.com/joseph-arnstein/utimate-drum-machine-with-sound.git`
 *   change into the new directory
 * `npm install`
 * `bower install`
@@ -22,6 +22,7 @@ Boom Bap is a primitive drum machine where a user can hover over the drum pads t
 ### Technologies Used
 
 * Ember
+* JavaScript
 * Handlebars
 * NPM
 * Node

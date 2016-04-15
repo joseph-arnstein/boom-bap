@@ -1,47 +1,43 @@
 <div class="sound-component">
 
-<div class="drum-top">
-
-  <div class="knob">
-  </div>
-
-  <div class="middle-top">
-
-    <div class="power-light">
+  <div class="drum-top">
+    <div class="knob">
     </div>
 
-    <div class="led-display">
-      <i class="fa fa-eraser" aria-hidden="true"></i>
+    <div class="middle-top">
+      <div class="power-light">
+      </div>
+      <div class="led-display"><i class="fa fa-eraser" aria-hidden="true"></i>
+      </div>
+    </div>
+
+    <div class="knob">
     </div>
 
   </div>
 
-  <div class="knob">
+  <div class="button-wrapper">
+
+    <button class="kickDrum drum" {{action 'kickDrum' on="mouseEnter"}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+
+    <button class="synthKickDrum drum" {{action 'synthKickDrum' on="mouseEnter"}}><i class="fa fa-keyboard-o" aria-hidden="true"></i></button>
+
+    <button class="snareDrum drum" {{action 'snareDrum' on="mouseEnter"}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+
+    <button class="snare2Drum drum" {{action 'snare2Drum' on="mouseEnter"}}><i class="fa fa-bolt" aria-hidden="true"></i></button>
+
+    <button class="rimShotDrum drum" {{action 'rimShotDrum' on="mouseEnter"}}><i class="fa fa-database" aria-hidden="true"></i></button><br>
+
+    <button class="clapDrum drum" {{action 'clapDrum' on="mouseEnter"}}><i class="fa fa-sign-language" aria-hidden="true"></i></button>
+
+    <button class="clap2Drum drum" {{action 'clap2Drum' on="mouseEnter"}}><i class="fa fa-sign-language" aria-hidden="true"></i></button>
+
+    <button class="crashDrum drum" {{action 'crashDrum' on="mouseEnter"}}><i class="fa fa-clone" aria-hidden="true"></i></button>
+
+    <button class="openHatDrum drum" {{action 'openHatDrum' on="mouseEnter"}}><i class="fa fa-circle-o" aria-hidden="true"></i></button>
+
+    <button class="closedHatDrum drum" {{action 'closedHatDrum' on="mouseEnter"}}><i class="fa fa-circle" aria-hidden="true"></i></button>
+    
   </div>
-
-</div>
-
-<div class="button-wrapper">
-
-  <button class="kickDrum drum" {{action 'kickDrum' on="mouseEnter"}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-
-  <button class="synthKickDrum drum" {{action 'synthKickDrum' on="mouseEnter"}}><i class="fa fa-keyboard-o" aria-hidden="true"></i></button>
-
-  <button class="snareDrum drum" {{action 'snareDrum' on="mouseEnter"}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-
-  <button class="snare2Drum drum" {{action 'snare2Drum' on="mouseEnter"}}><i class="fa fa-bolt" aria-hidden="true"></i></button>
-
-  <button class="rimShotDrum drum" {{action 'rimShotDrum' on="mouseEnter"}}><i class="fa fa-database" aria-hidden="true"></i></button><br>
-
-  <button class="clapDrum drum" {{action 'clapDrum' on="mouseEnter"}}><i class="fa fa-sign-language" aria-hidden="true"></i></button>
-
-  <button class="clap2Drum drum" {{action 'clap2Drum' on="mouseEnter"}}><i class="fa fa-sign-language" aria-hidden="true"></i></button>
-
-  <button class="crashDrum drum" {{action 'crashDrum' on="mouseEnter"}}><i class="fa fa-clone" aria-hidden="true"></i></button>
-
-  <button class="openHatDrum drum" {{action 'openHatDrum' on="mouseEnter"}}><i class="fa fa-circle-o" aria-hidden="true"></i></button>
-
-  <button class="closedHatDrum drum" {{action 'closedHatDrum' on="mouseEnter"}}><i class="fa fa-circle" aria-hidden="true"></i></button>
-</div>
 
 </div>

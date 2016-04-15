@@ -2,114 +2,129 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-
-.drum {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
-  border: none;
-  margin: 15px;
-  text-transform: uppercase;
-  font-weight: 300;
-  color: AliceBlue;
-  letter-spacing: 0.1em;
-  box-shadow: 1px 1px 1px #999;
-}
-
 .button-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
   margin-top: 40px;
-  width: 50%;
   height: 400px;
+  width: 50%;
   min-width: 100%;
   max-width: 100%;
+  .kickDrum, .clapDrum {
+    background: $boom-grey;
+    border: 1px solid $boom-green;
+    color: $boom-green;
+    &:hover {
+      background: $boom-green;
+      color: $boom-grey;
+    }
+  }
+  .rimShotDrum, .closedHatDrum {
+    background: $boom-grey;
+    border: 1px solid $boom-yellow;
+    color: $boom-yellow;
+    &:hover {
+      background: $boom-yellow;
+      color: $boom-grey;
+    }
+  }
+  .snareDrum, .crashDrum {
+    background: $boom-grey;
+    border: 1px solid $boom-salmon;
+    color: $boom-salmon;
+    &:hover {
+      background: $boom-salmon;
+      color: $boom-grey;
+    }
+  }
+  .snare2Drum, .openHatDrum {
+    background: $boom-grey;
+    border: 1px solid $boom-teal;
+    color: $boom-teal;
+    &:hover {
+      background: $boom-teal;
+      color: $boom-grey;
+    }
+  }
+  .synthKickDrum, .clap2Drum {
+    background: $boom-grey;
+    border: 1px solid $boom-blue;
+    color: $boom-blue;
+    &:hover {
+      background: $boom-blue;
+      color: $boom-grey;
+    }
+  }
 }
 
-.kickDrum, .clapDrum {
-  color: LightGreen;
-  background: AliceBlue;
-  border: 1px solid LightGreen;
-  &:hover {
-    background: LightGreen;
-    color: AliceBlue;
-  }
+.drum {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px $shadow-grey;
+  color: $boom-grey;
+  font-weight: 300;
+  height: 120px;
+  width: 120px;
+  letter-spacing: 0.1em;
+  margin: 15px;
+  text-transform: uppercase;
 }
-.synthKickDrum, .clap2Drum {
-  color: LightSkyBlue;
-  background: AliceBlue;
-  border: 1px solid LightSkyBlue;
-  &:hover {
-    color: AliceBlue;
-    background: LightSkyBlue;
-  }
-}
-.snareDrum, .crashDrum {
-  color: LightSalmon;
-  background: AliceBlue;
-  border: 1px solid LightSalmon;
-  &:hover {
-    color: AliceBlue;
-    background: LightSalmon;
-  }
-}
-.snare2Drum, .openHatDrum {
-  color: #67e4de;
-  background: AliceBlue;
-  border: 1px solid #67e4de;
-  &:hover {
-    color: AliceBlue;
-    background: #67e4de;
-  }
-}
-.rimShotDrum, .closedHatDrum {
-  color: #eded5e;
-  background: AliceBlue;
-  border: 1px solid #eded5e;
-  &:hover {
-    color: AliceBlue;
-    background: #eded5e;
-  }
-}
+
+
 
 .loop-group {
-  margin-top: -50px;
   display: flex;
   flex-wrap: wrap;
   font-size: .6em;
-}
-
-.loop {
-  color: #252525;
-  width: 100px;
-  height: 40px;
-  border: none;
-  margin: 1.5px 1.5px;
-  background: #444;
-  &:hover {
-    background: #888;
+  margin-top: -70px;
+  .loop {
+    background: $dark-grey;
+    border: none;
+    color: $boom-dark-grey;
+    width: 97px;
+    height: 40px;
+    margin: 1.5px 1.5px;
+    &:hover {
+      background: $light-grey;
+    }
   }
 }
 
 .start-loop {
-  font-family: 'Comfortaa', cursive;
-  font-size: 1em;
-  font-weight: lighter;
-  letter-spacing: 0.3em;
-  width: 100px;
-  height: 40px;
-  position: absolute;
-  margin-left: -120px;
-  margin-top: 22px;
-  color: AliceBlue;
-  background: LightSalmon;
+  background: $boom-salmon;
   border: none;
   border-radius: 10px;
+  color: $boom-grey;
+  font-family: $stack-comfortaa;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 0.2em;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: -100px;
   &:hover {
-    color: LightSalmon;
-    background: AliceBlue;
+    background: $boom-grey;
+    color: $boom-salmon;
+  }
+}
+
+.user-loop-group {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  .user-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .user-8 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
 
@@ -128,8 +143,17 @@
 .snare-eight {
   border-bottom-right-radius: 10px;
 }
+
 //icons
 
-.fa-sign-language, .fa-keyboard-o, .fa-clone, .fa-circle, .fa-circle-o, .fa-bullseye, .fa-database, .fa-bolt, .fa-magic {
+.fa-sign-language,
+.fa-keyboard-o,
+.fa-clone,
+.fa-circle,
+.fa-circle-o,
+.fa-bullseye,
+.fa-database,
+.fa-bolt,
+.fa-magic {
   font-size: 1.9em;
 }
