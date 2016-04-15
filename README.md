@@ -8,7 +8,7 @@ April 15, 2016
 
 ### Description
 
-Boom Bap is a primitive drum machine where a user can hover over the drum pads to create a beat, create a drum loop with kick and snare or make a loop with their drum of choice.
+Boom Bap is a drum machine where a user can hover over the drum pads to sound a beat, create a drum loop with kick and snare or make a loop with a drumpad of their choosing.
 
 ## Installation
 
