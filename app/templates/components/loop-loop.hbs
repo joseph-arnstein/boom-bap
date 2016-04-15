@@ -2,33 +2,26 @@
 
 <div class="loop-group">
 
-  <button class="loop kick-one" {{action 'kickAtOne'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'kickAtTwo'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'kickAtThree'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'kickAtFour'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'kickAtFive'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'kickAtSix'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'kickAtSeven'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
-  <button class="loop kick-eight" {{action 'kickAtEight'}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop kick-one" {{action 'kickAt' 1}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'kickAt' 2}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'kickAt' 3}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'kickAt' 4}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'kickAt' 5}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'kickAt' 6}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'kickAt' 7}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
+  <button class="loop kick-eight" {{action 'kickAt' 8}}><i class="fa fa-bullseye" aria-hidden="true"></i></button>
 
-  <button class="loop snare-one" {{action 'snareAtOne'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'snareAtTwo'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'snareAtThree'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'snareAtFour'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'snareAtFive'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'snareAtSix'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop" {{action 'snareAtSeven'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
-  <button class="loop snare-eight" {{action 'snareAtEight'}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop snare-one" {{action 'snareAt' 1}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'snareAt' 2}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'snareAt' 3}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'snareAt' 4}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'snareAt' 5}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'snareAt' 6}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop" {{action 'snareAt' 7}}><i class="fa fa-magic" aria-hidden="true"></i></button>
+  <button class="loop snare-eight" {{action 'snareAt' 8}}><i class="fa fa-magic" aria-hidden="true"></i></button>
 
   <div class="user-loop-group">
-    <button class="loop user-1" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop" ><i class="fa fa-braille" aria-hidden="true"></i></button>
-    <button class="loop user-8" ><i class="fa fa-braille" aria-hidden="true"></i></button>
+    {{choose-sound sample=selectAudio.chosen}}
   </div>
 
 </div>
