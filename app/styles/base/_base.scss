@@ -11,13 +11,13 @@ html {
 }
 
 body {
-  background: #252525;
-  font-family: 'Helvetica';
+  background: $boom-dark-grey;
+  font-family: $stack-helvetica;
   overflow-x: hidden;
 }
 
 .wrapper {
-  background: AliceBlue;
+  background: $boom-grey;
   border-radius: 10px;
   height: 475px;
   min-width: 800px;
@@ -43,9 +43,9 @@ body {
 .knob {
   height: 100px;
   width: 100px;
-  background: AliceBlue;
+  background: $boom-grey;
   border-radius: 50px;
-  box-shadow: 1px 1px 1px #999;
+  box-shadow: 1px 1px 1px $shadow-grey;
   border: solid 1px LightGrey;
   border-top-color: RoyalBlue;
   transition-duration: 10s;
@@ -74,7 +74,7 @@ body {
   width: 350px;
   border-radius: 5px;
   background: #bdf5bd;
-  border: 1px solid LightGreen;
+  border: 1px solid $boom-green;
   .fa-eraser {
     color: #666;
     font-size: 1.5em;
@@ -96,8 +96,8 @@ body {
   height: 12px;
   width: 12px;
   border-radius: 6px;
-  background-color: lighten(orange, 10);
-  border: 1px solid darken(orange, 10);
+  background-color: lighten($led-orange, 10);
+  border: 1px solid darken($led-orange, 10);
   margin-right: 20px;
   margin-left: 60px;
   -webkit-animation:blink 1s infinite alternate;
@@ -111,58 +111,58 @@ body {
 }
 
 @keyframes blink{
-  from {background:lighten(orange, 10);}
-  to {background: darken(orange, 10);}
+  from {background:lighten($led-orange, 10);}
+  to {background: darken($led-orange, 10);}
 }
 
 @-webkit-keyframes blink {
-  from {background: lighten(orange, 10);}
-  to {background: darken(orange, 15);}
+  from {background: lighten($led-orange, 10);}
+  to {background: darken($led-orange, 15);}
 }
 
 a {
   text-decoration: none;
   h2 {
     .b-title {
-      color: LightGreen;
+      color: $boom-green;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
     .o-title {
-      color: LightSkyBlue;
+      color: $boom-blue;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
     .o2-title {
-      color: LightSalmon;
+      color: $boom-salmon;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
     .m-title {
-      color: #67e4de;
+      color: $boom-teal;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
     .b2-title {
-      color: #eded5e;
+      color: $boom-yellow;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
     .a-title {
-      color: LightGreen;
+      color: $boom-green;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
     .p-title {
-      color: LightSkyBlue;
+      color: $boom-blue;
       &:hover {
-      color: white;
+      color: $white;
       }
     }
   }

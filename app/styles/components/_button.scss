@@ -11,9 +11,9 @@
   margin: 15px;
   text-transform: uppercase;
   font-weight: 300;
-  color: AliceBlue;
+  color: $boom-grey;
   letter-spacing: 0.1em;
-  box-shadow: 1px 1px 1px #999;
+  box-shadow: 1px 1px 1px $shadow-grey;
 }
 
 .button-wrapper {
@@ -29,48 +29,48 @@
 }
 
 .kickDrum, .clapDrum {
-  color: LightGreen;
-  background: AliceBlue;
-  border: 1px solid LightGreen;
+  color: $boom-green;
+  background: $boom-grey;
+  border: 1px solid $boom-green;
   &:hover {
-    background: LightGreen;
-    color: AliceBlue;
+    background: $boom-green;
+    color: $boom-grey;
   }
 }
 .synthKickDrum, .clap2Drum {
-  color: LightSkyBlue;
-  background: AliceBlue;
-  border: 1px solid LightSkyBlue;
+  color: $boom-blue;
+  background: $boom-grey;
+  border: 1px solid $boom-blue;
   &:hover {
-    color: AliceBlue;
-    background: LightSkyBlue;
+    color: $boom-grey;
+    background: $boom-blue;
   }
 }
 .snareDrum, .crashDrum {
-  color: LightSalmon;
-  background: AliceBlue;
-  border: 1px solid LightSalmon;
+  color: $boom-salmon;
+  background: $boom-grey;
+  border: 1px solid $boom-salmon;
   &:hover {
-    color: AliceBlue;
-    background: LightSalmon;
+    color: $boom-grey;
+    background: $boom-salmon;
   }
 }
 .snare2Drum, .openHatDrum {
-  color: #67e4de;
-  background: AliceBlue;
-  border: 1px solid #67e4de;
+  color: $boom-teal;
+  background: $boom-grey;
+  border: 1px solid $boom-teal;
   &:hover {
-    color: AliceBlue;
-    background: #67e4de;
+    color: $boom-grey;
+    background: $boom-teal;
   }
 }
 .rimShotDrum, .closedHatDrum {
-  color: #eded5e;
-  background: AliceBlue;
-  border: 1px solid #eded5e;
+  color: $boom-yellow;
+  background: $boom-grey;
+  border: 1px solid $boom-yellow;
   &:hover {
-    color: AliceBlue;
-    background: #eded5e;
+    color: $boom-grey;
+    background: $boom-yellow;
   }
 }
 
@@ -98,19 +98,19 @@
 }
 
 .loop {
-  color: #252525;
+  color: $boom-dark-grey;
   width: 97px;
   height: 40px;
   border: none;
   margin: 1.5px 1.5px;
-  background: #444;
+  background: $dark-grey;
   &:hover {
-    background: #888;
+    background: $light-grey;
   }
 }
 
 .start-loop {
-  font-family: 'Comfortaa', cursive;
+  font-family: $stack-comfortaa;
   font-size: 1em;
   font-weight: lighter;
   letter-spacing: 0.2em;
@@ -119,13 +119,13 @@
   position: absolute;
   margin-left: -100px;
   margin-top: 3px;
-  color: AliceBlue;
-  background: LightSalmon;
+  color: $boom-grey;
+  background: $boom-salmon;
   border: none;
   border-radius: 10px;
   &:hover {
-    color: LightSalmon;
-    background: AliceBlue;
+    color: $boom-salmon;
+    background: $boom-grey;
   }
 }
 
