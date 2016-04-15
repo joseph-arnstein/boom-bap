@@ -12,7 +12,7 @@ Boom Bap is a drum machine where a user can hover over the drum pads to sound a 
 
 ## Installation
 
-* `https://github.com/joseph-arnstein/utimate-drum-machine-with-sound.git`
+* `https://github.com/joseph-arnstein/boom-bap.git`
 *   change into the new directory
 * `npm install`
 * `bower install`
