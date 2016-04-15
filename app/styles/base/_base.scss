@@ -19,9 +19,9 @@ body {
 .wrapper {
   background: AliceBlue;
   border-radius: 10px;
-  height: 500px;
-  min-width: 825px;
-  max-width: 825px;
+  height: 475px;
+  min-width: 800px;
+  max-width: 800px;
   margin: auto;
   margin-top: 10px;
   -webkit-box-shadow: 11px 10px 19px -4px rgba(0,0,0,0.68);
@@ -36,7 +36,7 @@ body {
 }
 
 .drum-top {
-  margin-top: 35px;
+  margin-top: 25px;
   display: flex;
 }
 
@@ -93,34 +93,31 @@ body {
 }
 
 .power-light {
-  height: 15px;
-  width: 15px;
-  border-radius: 7.5px;
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  background-color: lighten(orange, 10);
   border: 1px solid darken(orange, 10);
   margin-right: 20px;
   margin-left: 60px;
-/*animation*/
--webkit-animation:blink 1s infinite alternate;
-   -moz-animation:blink 1s infinite alternate;
-    -ms-animation:blink 1s infinite alternate;
-     -o-animation:blink 1s infinite alternate;
-        animation:blink 1s infinite alternate;
-// position:absolute;
-z-index:100;
-/*border-radius*/
--webkit-border-radius:40px;
-   -moz-border-radius:40px;
-        border-radius:40px;
-background-color:orange;
+  -webkit-animation:blink 1s infinite alternate;
+  -moz-animation:blink 1s infinite alternate;
+  -ms-animation:blink 1s infinite alternate;
+  -o-animation:blink 1s infinite alternate;
+  animation:blink 1s infinite alternate;
+  -webkit-border-radius:40px;
+  -moz-border-radius:40px;
+  border-radius:40px;
 }
+
 @keyframes blink{
-from {background:orange;}
-to {background: darken(orange, 15);}
+  from {background:lighten(orange, 10);}
+  to {background: darken(orange, 10);}
 }
-@-webkit-keyframes blink /* Safari and Chrome */
-{
-from {background: orange;}
-to {background: darken(orange, 15);}
+
+@-webkit-keyframes blink {
+  from {background: lighten(orange, 10);}
+  to {background: darken(orange, 15);}
 }
 
 a {

@@ -75,15 +75,31 @@
 }
 
 .loop-group {
-  margin-top: -50px;
+  margin-top: -70px;
   display: flex;
   flex-wrap: wrap;
   font-size: .6em;
 }
 
+.user-loop-group {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  .user-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .user-8 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
 .loop {
   color: #252525;
-  width: 100px;
+  width: 97px;
   height: 40px;
   border: none;
   margin: 1.5px 1.5px;
@@ -97,12 +113,12 @@
   font-family: 'Comfortaa', cursive;
   font-size: 1em;
   font-weight: lighter;
-  letter-spacing: 0.3em;
-  width: 100px;
+  letter-spacing: 0.2em;
+  width: 80px;
   height: 40px;
   position: absolute;
-  margin-left: -120px;
-  margin-top: 22px;
+  margin-left: -100px;
+  margin-top: 3px;
   color: AliceBlue;
   background: LightSalmon;
   border: none;
@@ -128,6 +144,7 @@
 .snare-eight {
   border-bottom-right-radius: 10px;
 }
+
 //icons
 
 .fa-sign-language, .fa-keyboard-o, .fa-clone, .fa-circle, .fa-circle-o, .fa-bullseye, .fa-database, .fa-bolt, .fa-magic {
