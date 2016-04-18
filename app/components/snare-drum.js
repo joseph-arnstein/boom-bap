@@ -8,7 +8,6 @@ export default Ember.Component.extend({
       sound: new Audio('new-samples/snare (35).wav')
     };
     console.log(testInput);
-    alert("You have selected 'Snare' and can add it to your loop below!");
     this.get('selectAudio').add(testInput);
   }
 });
