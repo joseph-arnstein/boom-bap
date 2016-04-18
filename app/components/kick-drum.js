@@ -8,7 +8,6 @@ export default Ember.Component.extend({
       sound: new Audio('new-samples/Do_K1.wav')
     };
     console.log(testInput);
-    alert("You have selected 'Kick Drum' and can add it to your loop below!");
     this.get('selectAudio').add(testInput);
   }
 });
