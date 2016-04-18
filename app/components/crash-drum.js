@@ -8,7 +8,6 @@ export default Ember.Component.extend({
       sound: new Audio('new-samples/18CRS_SDCY.wav')
     };
     console.log(testInput);
-    alert("You have selected 'Crash Cymbal' and can add it to your loop below!");
     this.get('selectAudio').add(testInput);
   }
 });
