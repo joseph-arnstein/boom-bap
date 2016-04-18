@@ -8,7 +8,6 @@ export default Ember.Component.extend({
       sound: new Audio('new-samples/02_03_claps.wav')
     };
     console.log(testInput);
-    alert("You have selected 'Clap' and can add it to your loop below!");
     this.get('selectAudio').add(testInput);
   }
 });
